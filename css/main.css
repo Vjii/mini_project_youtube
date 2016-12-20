@@ -1,0 +1,213 @@
+
+
+
+/* =======CONTAINERS======= */
+
+.wrapper {
+	margin: 0 auto;
+	padding: 0;
+}
+
+.navigation { 
+	height: 100px;
+ }
+
+.sidebar {
+	float: right;
+
+	width: 30%;
+	height: 800px;
+	margin: 10px 2.5px;
+}
+
+.main-content {
+	float: left;
+	width: 65%;
+	margin: 10px 2.5px;
+}
+
+
+.content-box {
+	height: 200px;
+}
+
+
+/* ========CONTENT======= */
+
+
+.video-description {
+	padding-left: 10px;
+}
+
+/* =======FONTS======= */
+
+.heading {
+	font-size: 1.5em;
+}
+
+
+
+/* =======RE-USABLE======= */
+
+/* ICONS/LOGOS */ 
+
+.subscribe {
+	margin-top: 10px;
+	height: 22px;
+	background: url("../img/subscribe.png");
+	background-size: 100%;
+	border: none;
+	padding: 0;
+}
+
+
+.youtube {
+	background: url('../img/sprite.png') -299px 0;
+	width: 71px;
+	height: 30px;
+}
+
+.add:before {
+	background: url('../img/sprite.png') -352px -119px;
+		content: " ";
+		display: inline-block;
+		vertical-align: middle;width: 17px;
+
+	height: 17px;
+}
+
+.share:before {
+	background: url('../img/sprite.png') no-repeat -183px -45px;
+	width: 18px;
+	height: 16px;
+	content: " ";
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.more:before {
+	background: url('../img/sprite.png') no-repeat -43px -192px;
+	width: 18px;
+	height: 4px;
+	content: " ";
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.thumbs-up:before {	
+	background: url('../img/sprite.png') no-repeat -316px -309px;
+	width: 14px;
+	height: 14px;
+	content: " ";
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.thumbs-down:before {	
+	background: url('../img/sprite.png') no-repeat -159px -98px;
+	width: 11px;
+	height: 11px;
+	content: " ";
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+/* HELPER CLASSES */ 
+
+.border {
+	border: 1px solid #ccc;
+}
+
+.margin-vertical-20 { 
+ margin-top: 20px;
+ margin-bottom: 20px;
+ }
+
+ .margin-left {
+ 	margin-left: 10px;
+ }
+
+.width-icon {
+	width: 50px;
+}
+
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.float-right {
+	float: right;
+}
+
+.float-left {
+	float: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.round {
+	border-radius: 100%;
+}
+
+.width-1 {
+	width: 100%;
+}
+
+.width-100 {
+	width: 100px;
+}
+
+.width-75 {
+	width: 75px;
+}
+
+.width-50 {
+	width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======NAVIGATION======= */
+
+
+
+.logo {
+	height: 50px;
+}
+
+.menu-icon { 
+	height: 25px;
+ }
+
+
+/* =======SIDEBAR======= */
+
+.watch-sidebar {
+
+
+}
