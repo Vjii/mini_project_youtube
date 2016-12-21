@@ -4,24 +4,26 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>Page title</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
-  <nav class="navigation">
-	 	  <button class="menu-icon borderless inline float-left"></button>
-	  	<button class="youtube borderless float-left "></button>
-	  	<form id="searchbox" action="">
-		    <input class="search" type="search" placeholder="Search">
-		    <button class="search-button"><span class="search-icon">Search</span></button>
-			</form>
-			<button class="gmail borderless inline float-right"></button>
-			<button class="bell borderless inline float-right"></button>
-			<button class="upload borderless inline float-right"></button>
-		
-  </nav>
+	<header>
+	  <nav class="navigation">
+		 	  <button class="menu-icon borderless inline float-left"></button>
+		  	<button class="youtube borderless float-left "></button>
+		  	<form id="searchbox" action="">
+			    <input class="search" type="search" placeholder="Search">
+			    <button class="search-button"><span class="search-icon">Search</span></button>
+				</form>
+				<button class="gmail borderless inline float-right"></button>
+				<button class="bell borderless inline float-right"></button>
+				<button class="upload borderless inline float-right"></button>		
+	  </nav>
+  </header>
   
   <div class="wrapper">
   	<section class="main-content">
@@ -65,81 +67,39 @@
   	</section>
 
   	<aside class="sidebar">
-  			<div class="watch-sidebar">
-  				<img class="float-left" src="img/sidebar-1.jpg">
+  			<nav class="clearfix">
+  				<button class="borderless no-bg float-left">Up next</button>
+
+						<label for="autoplay-button" id="autoplay-button-label"><span class="checked">xd</span><span class="toggle"></span><span class="unchecked"></span></label>
+	  				<input id="autoplay-button" class="float-right" type="checkbox" checked="">
+	  			
+  					
+  					<div class="info float-right">
+  					</div>
+  					<h5 class="float-right">Autoplay</h5>
+  					
+  					
+  				
+  			</nav>
+  			<div class="watch-sidebar clearfix">
+  				<div class="sidebar-video float-left">
+  					<img src="img/sidebar-1.jpg">
+					</div>
   				<div class="sidebar-description float-right">
-  					<h6 class="sidebar-font">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h6>
-  					<h6 class="sidebar-font">DeepMind</h6>
-  					<h6 class="sidebar-font">152,612 views</h6>
+  					<h3 class="font-large">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h3>
+  					<h6 class="color-views font-small">DeepMind</h6>
+  					<h6 class="color-views font-small">152,612 views</h6>
   				</div>
   			</div>
-  			<div class="watch-sidebar">
-  				<img class="float-left" src="img/sidebar-2.jpg">
-  				<div class="sidebar-description float-right">
-  					<h6 class="sidebar-font">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h6>
-  					<h6 class="sidebar-font">DeepMind</h6>
-  					<h6 class="sidebar-font">152,612 views</h6>
-  				</div>
-  			</div>
-  			<!-- <div class="watch-sidebar">
-  				<img class="float-left" src="img/sidebar-3.jpg">
-  				<h6 class="sidebar-font">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h6>
-  				<h6 class="sidebar-font">DeepMind</h6>
-  				<h6 class="sidebar-font">152,612 views</h6>
-  			</div>
-  			<div class="watch-sidebar">
-  				<img class="float-left" src="img/sidebar-4.jpg">
-  				<h6 class="sidebar-font">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h6>
-  				<h6 class="sidebar-font">DeepMind</h6>
-  				<h6 class="sidebar-font">152,612 views</h6>
-  			</div>
-  			<div class="watch-sidebar">
-  				<img class="float-left" src="img/sidebar-5.jpg">
-  				<h6 class="sidebar-font">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h6>
-  				<h6 class="sidebar-font">DeepMind</h6>
-  				<h6 class="sidebar-font">152,612 views</h6>
-  			</div>
-  			<div class="watch-sidebar">
-  				<img class="float-left" src="img/sidebar-6.jpg">
-  				<h6 class="sidebar-font">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h6>
-  				<h6 class="sidebar-font">DeepMind</h6>
-  				<h6 class="sidebar-font">152,612 views</h6>
-  			</div>
-  			<div class="watch-sidebar">
-  				<img class="float-left" src="img/sidebar-7.jpg">
-  				<h6 class="sidebar-font">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h6>
-  				<h6 class="sidebar-font">DeepMind</h6>
-  				<h6 class="sidebar-font">152,612 views</h6>
-  			</div>
-  			<div class="watch-sidebar">
-  				<img class="float-left" src="img/sidebar-8.jpg">
-  				<h6 class="sidebar-font">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h6>
-  				<h6 class="sidebar-font">DeepMind</h6>
-  				<h6 class="sidebar-font">152,612 views</h6>
-  			</div>
-  			<div class="watch-sidebar">
-  				<img class="float-left" src="img/sidebar-9.jpg">
-  				<h6 class="sidebar-font">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h6>
-  				<h6 class="sidebar-font">DeepMind</h6>
-  				<h6 class="sidebar-font">152,612 views</h6>
-  			</div>
-  			<div class="watch-sidebar">
-  				<img class="float-left" src="img/sidebar-10.jpg">
-  				<h6 class="sidebar-font">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h6>
-  				<h6 class="sidebar-font">DeepMind</h6>
-  				<h6 class="sidebar-font">152,612 views</h6>
-  			</div>
-  			<div class="watch-sidebar">
-  				<img class="float-left" src="img/sidebar-11.jpg">
-  				<h6 class="sidebar-font">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h6>
-  				<h6 class="sidebar-font">DeepMind</h6>
-  				<h6 class="sidebar-font">152,612 views</h6>
-  			</div> -->
+  			<hr class="line">
+  			
+  			
+  		
+
+
 
 
 		</aside>
-
-
   </div> <!-- wrapper -->
 
   <script src="js/main.js"></script>

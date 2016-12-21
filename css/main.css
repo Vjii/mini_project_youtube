@@ -1,5 +1,5 @@
 body {
-	font-family: Arial, Helvetica;
+  font-family: 'Roboto', sans-serif, Arial, Helvetica;
 	background-color: #eee;
 }
 
@@ -143,6 +143,28 @@ body {
 }
 
 
+/* FONTS */ 
+
+
+.font-large {
+	font-size: 14px;
+	line-height: 1.2em;
+	font-weight: 500;
+}
+
+.font-small {
+	font-size: 11px;
+}
+
+
+/* COLORS */ 
+
+.color-views {
+	color: #888;
+}
+
+
+
 /* HELPER CLASSES */ 
 
 .center {
@@ -155,6 +177,12 @@ body {
 
 .no-bg {
 	background: none;
+}
+
+.line {
+	height: .5px;
+	background-color: #ccc;
+	border: none;
 }
 
 .borderless {
@@ -321,19 +349,45 @@ body {
 
 /* =======SIDEBAR======= */
 
-.watch-sidebar {
-	width: 30%;
 
+.autoplay-button {
+	background: url('../img/sprite.png') no-repeat-134px -337px;
+	    width: 10px;
+    height: 7px;
+}
+
+}
+
+.checked {
+	background: url('../img/sprite.png') no-repeat-134px -337px;
+	width: 10px;
+  height: 7px;
+
+}
+
+.info {
+	background: url('../img/sprite.png') no-repeat -603px -108px;
+	width: 12px;
+	height: 12px;
+}
+
+
+
+
+.watch-sidebar {
+}
+
+.sidebar-video {
+	margin: 0;
+	width: 40%;
 }
 
 .sidebar-description {
-	margin-left: 10px;
 	padding: 10px;
-	width:;
+	width: 210px;
 }
 
-.sidebar-font {
-	font-size: 12px;
-	font-weight: bold;
-
+.sidebar-description > h6, 
+.sidebar-description > h5 {
+	padding-top: 5px;
 }
