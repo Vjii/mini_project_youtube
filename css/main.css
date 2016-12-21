@@ -1,34 +1,45 @@
-
+body {
+	font-family: Arial, Helvetica;
+	background-color: #eee;
+}
 
 
 /* =======CONTAINERS======= */
 
 .wrapper {
 	margin: 0 auto;
-	padding: 0;
+	padding: 5px 32px;
+	width: 1140px;
 }
 
 .navigation { 
-	height: 100px;
+	background-color: #fff;
+	height: 50px;
+	line-height: 50px;
  }
 
 .sidebar {
 	float: right;
+	width: 400px;
+	min-height: 800px;
+	margin: 10px 0;
+	padding: 15px;
+	background-color: #fff;
 
-	width: 30%;
-	height: 800px;
-	margin: 10px 2.5px;
 }
 
 .main-content {
 	float: left;
-	width: 65%;
+	width: 640px;
 	margin: 10px 2.5px;
 }
 
 
 .content-box {
+	padding: 5px;
 	height: 200px;
+	background-color: #fff;
+
 }
 
 
@@ -39,10 +50,11 @@
 	padding-left: 10px;
 }
 
-/* =======FONTS======= */
 
-.heading {
+.video-title {
 	font-size: 1.5em;
+	width: 70%;
+
 }
 
 
@@ -53,16 +65,29 @@
 
 .subscribe {
 	margin-top: 10px;
-	height: 22px;
+	width: 90px;
+	height: 24px;
 	background: url("../img/subscribe.png");
-	background-size: 100%;
+	background-size: cover;
 	border: none;
 	padding: 0;
+}
+
+.subscribe-count {
+	display: inline-block;
+	margin-top: 10px;
+	padding: 0 7px 0 7px;
+	height: 22px;
+	border: 1px solid #ccc;
+	border-left: none;
+	line-height: 22px;
+
 }
 
 
 .youtube {
 	background: url('../img/sprite.png') -299px 0;
+	margin-top: 10px;
 	width: 71px;
 	height: 30px;
 }
@@ -74,6 +99,7 @@
 		vertical-align: middle;width: 17px;
 
 	height: 17px;
+	margin-right: 15px;
 }
 
 .share:before {
@@ -83,6 +109,7 @@
 	content: " ";
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 15px;
 }
 
 .more:before {
@@ -92,6 +119,7 @@
 	content: " ";
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 15px;
 }
 
 .thumbs-up:before {	
@@ -101,6 +129,7 @@
 	content: " ";
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 15px;
 }
 
 .thumbs-down:before {	
@@ -110,22 +139,38 @@
 	content: " ";
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 15px;
 }
 
 
 /* HELPER CLASSES */ 
 
-.border {
-	border: 1px solid #ccc;
+.center {
+	text-align: center;
 }
 
+.round {
+	border-radius: 100%;
+}
+
+.no-bg {
+	background: none;
+}
+
+.borderless {
+	border: none;
+}
+
+.nav-margins {
+	margin: 10px 15px 15px 50px;
+}
 .margin-vertical-20 { 
  margin-top: 20px;
  margin-bottom: 20px;
  }
 
  .margin-left {
- 	margin-left: 10px;
+ 	margin: 16.5px 0 0 10px;
  }
 
 .width-icon {
@@ -138,6 +183,10 @@
 
 .inline-block {
 	display: inline-block;
+}
+
+.inline {
+	display: inline; 
 }
 
 
@@ -155,13 +204,6 @@
 	float: left;
 }
 
-.center {
-	text-align: center;
-}
-
-.round {
-	border-radius: 100%;
-}
 
 .width-1 {
 	width: 100%;
@@ -187,13 +229,7 @@
 
 
 
-
-
-
-
-
 /* =======NAVIGATION======= */
-
 
 
 .logo {
@@ -201,13 +237,103 @@
 }
 
 .menu-icon { 
-	height: 25px;
+	background: url('../img/sprite.png') no-repeat -84px -3px;
+	margin: 20px 1.5em 0 2.5em;
+	width: 13px;
+	height: 10px;
  }
+
+
+#searchbox {
+	width: 60%;
+	float: left;
+	margin-left: 100px;
+}
+
+.search {
+	width: 90%;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #ccc;
+}
+
+.search-button {
+	width: 10%;
+	height: 30px;
+	margin: 0 0 0 -5px;
+	padding: 0;
+	border: 1px solid #ccc;
+	background: #eee;
+}
+
+.search-icon {
+	margin: 0 auto;
+	background: url('../img/sprite.png') no-repeat -647px -24px;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	text-indent: -10000px;
+
+}
+
+
+.search::-webkit-input-placeholder {
+	padding-left: 5px;
+	font-size: 16px;
+}
+
+.search::-moz-placeholder {
+	padding-left: 5px;
+	font-size: 16px;
+}
+
+.search::-ms-placeholder { 
+	padding-left: 5px;
+	font-size: 16px;
+ }
+
+
+.upload {
+	margin: 16.5px 1em 0 ;
+	background: url('../img/sprite.png') no-repeat -5px -78px;
+	width: 14px;
+	height: 17px;
+}
+
+.bell {
+	margin: 14.5px 1em 0 ;
+	background: url('../img/sprite.png') no-repeat -486px -54px;
+	width: 17px;
+	height: 20px;
+}
+
+.gmail {
+	margin: 11.5px 2em 0 1em;
+	background: url('../img/gmail.jpg') no-repeat;
+	background-size: contain;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+}
+
 
 
 /* =======SIDEBAR======= */
 
 .watch-sidebar {
+	width: 30%;
 
+}
+
+.sidebar-description {
+	margin-left: 10px;
+	padding: 10px;
+	width:;
+}
+
+.sidebar-font {
+	font-size: 12px;
+	font-weight: bold;
 
 }
