@@ -12,37 +12,41 @@
 
 <body>
 	<header>
-	  <nav class="navigation">
-		 	  <button class="menu-icon borderless inline float-left"></button>
-		  	<button class="youtube borderless float-left "></button>
-		  	<form id="searchbox" action="">
-			    <input class="search" type="search" placeholder="Search">
-			    <button class="search-button"><span class="search-icon">Search</span></button>
-				</form>
-				<button class="gmail borderless inline float-right"></button>
-				<button class="bell borderless inline float-right"></button>
-				<button class="upload borderless inline float-right"></button>		
+	  <nav class="nav">
+	 	  <button class="nav__icon nav--borderless 
+	 	  layout--inline layout--left"></button>
+	  	<button class="nav__youtube nav--borderless layout--left "></button>
+	  	<form class="nav__searchbox" action="">
+		    <input class="nav__input" type="search" placeholder="Search">
+		    <button class="nav__search"><span class="nav__search__icon">Search</span></button>
+			</form>
+			<button class="nav__gmail nav--borderless 
+			layout--inline layout--right"></button>
+			<button class="nav__bell nav--borderless 
+			layout--inline layout--right"></button>
+			<button class="nav__upload nav--borderless 
+			layout--inline layout--right"></button>		
 	  </nav>
   </header>
   
   <div class="content-wrapper clearfix">
-  	<section class="main-content">
+  	<section class="video">
   		<article>
   			<iframe width="640" height="360" src="https://www.youtube.com/embed/yCALyQRN3hw" frameborder="0" allowfullscreen></iframe>
   		</article>
-  		<article class="video-description content-box">
-  			<div class="clearfix width-1">
-	  			<h1 class="video-title">Match 4 - Google DeepMind Challenge Match: Lee Sedol vs AlphaGo
+  		<article class="main">
+  			<div class="clearfix main__title--width">
+	  			<h1 class="main__title">Match 4 - Google DeepMind Challenge Match: Lee Sedol vs AlphaGo
 					</h1>
 					
-					<div class="account-info font-large float-left">
+					<div class="main__account font-large layout--left">
 					<img class="deepmind round float-left" src="img/deepmind.png">
 					
-						<div class="subscribe-container">
-							<h2 class="deepmind-title font-weight">DeepMind</h2>
+						<div class="main__subscribe">
+							<h2 class="main__deepmind--padding font-weight">DeepMind</h2>
 							<button class="subscribe float-left" src="img/subscribe.png"> </button>
 							<span class="subscribe-count font-large color-views float-left">63,976</span>
-							<h2 class="views color-views float-right">1,413,315 views</h2>
+							<h2 class="views color-views layout--right">1,413,315 views</h2>
 						</div>
 					</div>
 				
@@ -52,9 +56,9 @@
 					<button class="add no-bg borderless float-left">Add to</button>
 					<button class="share no-bg borderless float-left">Share</button>
 					<button class="more no-bg borderless float-left">More</button>
-					<div class="likes float-right">
-						<button class="thumbs-down no-bg borderless color-views  float-right">209</button>
-						<button class="thumbs-up no-bg borderless color-views float-right">8,069</button>
+					<div class="likes layout--right">
+						<button class="thumbs-down no-bg borderless color-views  layout--right">209</button>
+						<button class="thumbs-up no-bg borderless color-views layout--right">8,069</button>
 					</div>
 				</div>
 					
@@ -82,17 +86,17 @@
   	<aside class="sidebar">
   			<div class="sidebar-title clearfix">
   				<h3 class="font-large font-weight no-bg float-left">Up next</h3> 
-  					<div class="autoplay-button float-right"></div>
-  					<div class="info float-right">
+  					<div class="autoplay-button layout--right"></div>
+  					<div class="info layout--right">
   					</div>
-  					<h5 class="autoplay-text color-views font-large font-weight float-right">Autoplay</h5>
+  					<h5 class="autoplay-text color-views font-large font-weight layout--right">Autoplay</h5>
   			</div>
 
   			<div class="watch-sidebar clearfix">
   				<div class="sidebar-video float-left">
   					<img src="img/sidebar-1.jpg">
 					</div>
-  				<div class="sidebar-description float-right">
+  				<div class="sidebar-description layout--right">
   					<h3 class="font-large font-weight line-height-12">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h3>
   					<h6 class="color-views font-small">DeepMind</h6>
   					<h6 class="color-views font-small">152,612 views</h6>
@@ -103,7 +107,7 @@
   				<div class="sidebar-video float-left">
   					<img src="img/sidebar-2.jpg">
 					</div>
-  				<div class="sidebar-description float-right">
+  				<div class="sidebar-description layout--right">
   					<h3 class="font-large font-weight line-height-12">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h3>
   					<h6 class="color-views font-small">DeepMind</h6>
   					<h6 class="color-views font-small">152,612 views</h6>
@@ -113,7 +117,7 @@
   				<div class="sidebar-video float-left">
   					<img src="img/sidebar-3.jpg">
 					</div>
-  				<div class="sidebar-description float-right">
+  				<div class="sidebar-description layout--right">
   					<h3 class="font-large font-weight line-height-12">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h3>
   					<h6 class="color-views font-small">DeepMind</h6>
   					<h6 class="color-views font-small">152,612 views</h6>
@@ -123,7 +127,7 @@
   				<div class="sidebar-video float-left">
   					<img src="img/sidebar-4.jpg">
 					</div>
-  				<div class="sidebar-description float-right">
+  				<div class="sidebar-description layout--right">
   					<h3 class="font-large font-weight line-height-12">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h3>
   					<h6 class="color-views font-small">DeepMind</h6>
   					<h6 class="color-views font-small">152,612 views</h6>
@@ -133,7 +137,7 @@
   				<div class="sidebar-video float-left">
   					<img src="img/sidebar-5.jpg">
 					</div>
-  				<div class="sidebar-description float-right">
+  				<div class="sidebar-description layout--right">
   					<h3 class="font-large font-weight line-height-12">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h3>
   					<h6 class="color-views font-small">DeepMind</h6>
   					<h6 class="color-views font-small">152,612 views</h6>
@@ -143,7 +147,7 @@
   				<div class="sidebar-video float-left">
   					<img src="img/sidebar-6.jpg">
 					</div>
-  				<div class="sidebar-description float-right">
+  				<div class="sidebar-description layout--right">
   					<h3 class="font-large font-weight line-height-12">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h3>
   					<h6 class="color-views font-small">DeepMind</h6>
   					<h6 class="color-views font-small">152,612 views</h6>
@@ -153,7 +157,7 @@
   				<div class="sidebar-video float-left">
   					<img src="img/sidebar-7.jpg">
 					</div>
-  				<div class="sidebar-description float-right">
+  				<div class="sidebar-description layout--right">
   					<h3 class="font-large font-weight line-height-12">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h3>
   					<h6 class="color-views font-small">DeepMind</h6>
   					<h6 class="color-views font-small">152,612 views</h6>
@@ -163,7 +167,7 @@
   				<div class="sidebar-video float-left">
   					<img src="img/sidebar-8.jpg">
 					</div>
-  				<div class="sidebar-description float-right">
+  				<div class="sidebar-description layout--right">
   					<h3 class="font-large font-weight line-height-12">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h3>
   					<h6 class="color-views font-small">DeepMind</h6>
   					<h6 class="color-views font-small">152,612 views</h6>
@@ -173,7 +177,7 @@
   				<div class="sidebar-video float-left">
   					<img src="img/sidebar-9.jpg">
 					</div>
-  				<div class="sidebar-description float-right">
+  				<div class="sidebar-description layout--right">
   					<h3 class="font-large font-weight line-height-12">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h3>
   					<h6 class="color-views font-small">DeepMind</h6>
   					<h6 class="color-views font-small">152,612 views</h6>
@@ -183,7 +187,7 @@
   				<div class="sidebar-video float-left">
   					<img src="img/sidebar-10.jpg">
 					</div>
-  				<div class="sidebar-description float-right">
+  				<div class="sidebar-description layout--right">
   					<h3 class="font-large font-weight line-height-12">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h3>
   					<h6 class="color-views font-small">DeepMind</h6>
   					<h6 class="color-views font-small">152,612 views</h6>
@@ -193,7 +197,7 @@
   				<div class="sidebar-video float-left">
   					<img src="img/sidebar-11.jpg">
 					</div>
-  				<div class="sidebar-description float-right">
+  				<div class="sidebar-description layout--right">
   					<h3 class="font-large font-weight line-height-12">Match 4 15 Minute Summary - Google DeepMind Challenge Match</h3>
   					<h6 class="color-views font-small">DeepMind</h6>
   					<h6 class="color-views font-small">152,612 views</h6>

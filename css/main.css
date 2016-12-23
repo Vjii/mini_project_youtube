@@ -1,4 +1,4 @@
-
+/* CODE ORGANIZATION FOLLOWS THE "BEM" METHOD */
 
 body {
   font-family: 'Roboto', sans-serif, Arial, Helvetica;
@@ -10,7 +10,7 @@ span {
 }
 
 
-/* =======CONTAINERS======= */
+/* ================== CONTAINER ================== */
 
 .content-wrapper {
 	margin: 0 auto;
@@ -18,31 +18,147 @@ span {
 	width: 1080px;
 }
 
-.navigation { 
+/* ================== MODIFIERS LAYOUT ================== */
+
+.layout--left {
+	float: left;
+}
+
+.layout--right {
+	float: right;
+}
+
+.layout--clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.layout--inline {
+	display: inline;
+}
+
+.layout--inline-block {
+	display: inline-block;
+}
+
+.layout--block {
+	display: block;
+}
+
+
+/* ================== BLOCK - NAVIGATION ================== */
+
+.nav { 
 	background-color: #fff;
 	height: 50px;
 	line-height: 50px;
  }
 
-.sidebar {
-	margin: 10px 0;
-	padding: 15px;
-	width: 400px;
-	min-height: 800px;
-	float: right;
-	background-color: #fff;
-	box-shadow: 0 0 1px 1px #ddd;
+/* ================== ELEMENTS - NAVIGATION ================== */
 
+ .nav__icon { 
+	background: url('../img/sprite.png') no-repeat -84px -3px;
+	margin: 20px 1.5em 0 2.5em;
+	width: 13px;
+	height: 10px;
+ }
+
+.nav__youtube {
+	background: url('../img/sprite.png') -299px 0;
+	margin-top: 10px;
+	width: 71px;
+	height: 30px;
 }
 
-.main-content {
+.nav__searchbox {
+	width: 60%;
 	float: left;
-	width: 640px;
-	margin: 10px 2.5px;
+	margin-left: 100px;
+}
+
+.nav__input {
+	width: 90%;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #ccc;
+}
+
+.nav__input::-webkit-input-placeholder {
+	padding-left: 5px;
+	font-size: 16px;
+}
+
+.nav__input::-moz-placeholder {
+	padding-left: 5px;
+	font-size: 16px;
+}
+
+.nav__input::-ms-placeholder { 
+	padding-left: 5px;
+	font-size: 16px;
+ }
+
+.nav__search {
+	width: 10%;
+	height: 30px;
+	margin: 0 0 0 -5px;
+	padding: 0;
+	border: 1px solid #ccc;
+	background: #eee;
+
+}
+
+.nav__search__icon {
+	margin: 0 auto;
+	background: url('../img/sprite.png') no-repeat -647px -24px;
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	text-indent: -10000px;
+
+}
+
+.nav__upload {
+	margin: 16.5px 1em 0 ;
+	background: url('../img/sprite.png') no-repeat -5px -78px;
+	width: 14px;
+	height: 17px;
+}
+
+.nav__bell {
+	margin: 14.5px 1em 0 ;
+	background: url('../img/sprite.png') no-repeat -486px -54px;
+	width: 17px;
+	height: 20px;
+}
+
+.nav__gmail {
+	margin: 11.5px 2em 0 1em;
+	background: url('../img/gmail.jpg') no-repeat;
+	background-size: contain;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
 }
 
 
-.content-box {
+/* ================== MODIFIERS - NAVIGATION ================== */
+
+.nav--borderless {
+	border: none;
+}
+
+
+.borderless {
+	border: none;
+}
+
+
+/* ================== BLOCK - MAIN  ================== */
+
+.main { 
 	padding: 15px;
 	margin-top: 10px;
 	min-height: 135px;
@@ -51,26 +167,37 @@ span {
 }
 
 
-/* ========CONTENT======= */
+/* ================== ELEMENTS - MAIN  ================== */
 
-
-.video-description {
-	padding: 15px;
-}
-
-.video-title {
+.main__title {
 	font-size: 20px;
 	width: 460px;
 }
 
-.account-info {
+.main__account {
 	width: 100%;
 	padding: 10px 0 0 0;
 }
 
-.deepmind-title {
+/* ================== MODIFIERS - MAIN  ================== */
+
+.main__title--width {
+	width : 100%;
+}
+
+
+.main__subscribe {
+	margin-left: 60px;
+	height: 24px;
+}
+
+
+.main__deepmind--padding {
 	padding-top: 5px;
 }
+
+
+
 
 
 .deepmind {
@@ -105,11 +232,49 @@ span {
 }
 
 
+/* BELOW - TO BE REFACTORED  ================== */
+/* ================== BLOCKS ================== */
+/* ================== BLOCKS ================== */
+/* ================== BLOCKS ================== */
+/* ================== BLOCKS ================== */
+/* ================== BLOCKS ================== */
+/* ================== BLOCKS ================== */
+/* ================== BLOCKS ================== */
+/* ================== BLOCKS ================== */
+
+
+.sidebar {
+	margin: 10px 0;
+	padding: 15px;
+	width: 400px;
+	min-height: 800px;
+	float: right;
+	background-color: #fff;
+	box-shadow: 0 0 1px 1px #ddd;
+
+}
+
+.video {
+	float: left;
+	width: 640px;
+	margin: 10px 2.5px;
+}
+
+
+.content-box {
+	padding: 15px;
+	margin-top: 10px;
+	min-height: 135px;
+	background-color: #fff;
+	box-shadow: 0 0 1px 1px #ddd;
+}
+
+
+/* ========CONTENT======= */
 
 /* =======RE-USABLE======= */
 
 /* ICONS/LOGOS */ 
-
 
 
 .subscribe {
@@ -270,9 +435,6 @@ span {
 	border: none;
 }
 
-.borderless {
-	border: none;
-}
 
 .nav-margins {
 	margin: 10px 15px 15px 50px;
@@ -299,13 +461,9 @@ span {
 	display: block;
 }
 
-.inline-block {
-	display: inline-block;
-}
 
-.inline {
-	display: inline; 
-}
+
+
 
 
 .clearfix::after {
@@ -361,86 +519,12 @@ span {
 	height: 50px;
 }
 
-.menu-icon { 
-	background: url('../img/sprite.png') no-repeat -84px -3px;
-	margin: 20px 1.5em 0 2.5em;
-	width: 13px;
-	height: 10px;
- }
 
 
-#searchbox {
-	width: 60%;
-	float: left;
-	margin-left: 100px;
-}
-
-.search {
-	width: 90%;
-	height: 30px;
-	margin: 0;
-	padding: 0;
-	border: 1px solid #ccc;
-}
-
-.search-button {
-	width: 10%;
-	height: 30px;
-	margin: 0 0 0 -5px;
-	padding: 0;
-	border: 1px solid #ccc;
-	background: #eee;
-}
-
-.search-icon {
-	margin: 0 auto;
-	background: url('../img/sprite.png') no-repeat -647px -24px;
-	width: 15px;
-	height: 15px;
-	display: inline-block;
-	text-indent: -10000px;
-
-}
 
 
-.search::-webkit-input-placeholder {
-	padding-left: 5px;
-	font-size: 16px;
-}
-
-.search::-moz-placeholder {
-	padding-left: 5px;
-	font-size: 16px;
-}
-
-.search::-ms-placeholder { 
-	padding-left: 5px;
-	font-size: 16px;
- }
 
 
-.upload {
-	margin: 16.5px 1em 0 ;
-	background: url('../img/sprite.png') no-repeat -5px -78px;
-	width: 14px;
-	height: 17px;
-}
-
-.bell {
-	margin: 14.5px 1em 0 ;
-	background: url('../img/sprite.png') no-repeat -486px -54px;
-	width: 17px;
-	height: 20px;
-}
-
-.gmail {
-	margin: 11.5px 2em 0 1em;
-	background: url('../img/gmail.jpg') no-repeat;
-	background-size: contain;
-	width: 25px;
-	height: 25px;
-	border-radius: 100%;
-}
 
 
 
@@ -469,6 +553,26 @@ span {
 	width: 12px;
 	height: 12px;
 
+}
+
+.inline {
+	display: inline;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.block {
+	display: block;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
 }
 
 .watch-sidebar {
